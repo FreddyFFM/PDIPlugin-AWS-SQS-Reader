@@ -1,8 +1,7 @@
-# PDIPlugin-AWS-SNS
-_Amazon Webservices Simple Notification Service Plugin for Pentaho Data Integration_
+# PDIPlugin-AWS-SQS-Reader
+_Amazon Webservices Simple Queue Service Plugin for Pentaho Data Integration_
 
-The AWS-SNS Plugin enables you to send Notifications from a PDI Transformation via AWS SNS 
-to subscribed users.
+The AWS-SQS Plugin enables you receive messages from Amazon Webservices Simple Queue Service within a PDI Transformation.
 
 
 
