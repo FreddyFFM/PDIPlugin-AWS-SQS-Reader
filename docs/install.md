@@ -5,7 +5,7 @@
 - Pentaho Data Integration 7.1 or above (Pentaho 8.X is recommended!)
 - Copy following jar files to ${DI\_HOME}/lib
     - [Jackson Databind][jackson] (Version 2.9.8 or higher - current version needs to be replaced)
-    - [Amazon Java SDK for SQS][aws-sdk] (Version 1.11.269 or higher)
+    - [Amazon Java SDK][aws-sdk] (Version 1.11.269 or higher)
     - [Joda Time][joda] (Version 2.9.9 or higher - current version needs to be replaced)
 - For Pentaho DI 7.X following files need to be replaced/added in ${DI\_HOME}/lib also
     - [Jackson Annotations][jackson] (Version 2.9.8 or higher - current version needs to be replaced)
