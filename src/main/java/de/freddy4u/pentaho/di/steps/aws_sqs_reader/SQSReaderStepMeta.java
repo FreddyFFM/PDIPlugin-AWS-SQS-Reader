@@ -142,11 +142,11 @@ public class SQSReaderStepMeta extends BaseStepMeta implements StepMetaInterface
 	}
 	
 	public String getAwsCredChain() {
-		return awsCredChain;
+		return awsCredChain = awsCredChain == null ? "N" : awsCredChain;
 	}
 
 	public void setAwsCredChain(String awsCredChain) {
-		this.awsCredChain = awsCredChain == null ? "N" : awsCredChain;
+		this.awsCredChain = awsCredChain;
 	}
 
 	public String getAWSKey() {

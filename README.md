@@ -7,11 +7,16 @@ The AWS-SQS Plugin enables you receive messages from Amazon Webservices Simple Q
 
 ## System Requirements
 
-- Pentaho Data Integration 7.0 or above
+- Pentaho Data Integration 7.1 or above (Pentaho 8.X is recommended!)
 - Copy following jar files to ${DI\_HOME}/lib
-    - [Jackson Databind][jackson] (Version 2.9.3 or higher - current version needs to be replaced)
+    - [Jackson Databind][jackson] (Version 2.9.8 or higher - current version needs to be replaced)
     - [Amazon Java SDK for SNS][aws-sdk] (Version 1.11.269 or higher)
     - [Joda Time][joda] (Version 2.9.9 or higher - current version needs to be replaced)
+- For Pentaho DI 7.X following files need to be replaced in ${DI\_HOME}/lib also
+    - [Jackson Annotations][jackson] (Version 2.9.8 or higher)
+    - [Jackson Core][jackson] (Version 2.9.8 or higher)
+    - [Apache HttpCore][http] (Version 4.4.6 or higher)
+    - [Apache HttpClient][http] (Version 4.5.3 or higher)
 
 
 
@@ -64,3 +69,4 @@ SQS offers two types of message queues. Standard queues offer maximum throughput
 [jackson]: https://github.com/FasterXML/jackson-databind/wiki
 [aws-sdk]: https://aws.amazon.com/de/sdk-for-java/
 [joda]: https://github.com/JodaOrg/joda-time/releases
+[http]: https://hc.apache.org/downloads.cgi

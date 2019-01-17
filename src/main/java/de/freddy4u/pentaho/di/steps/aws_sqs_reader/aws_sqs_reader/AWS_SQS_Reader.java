@@ -131,14 +131,14 @@ public class AWS_SQS_Reader {
 			receiveMessageRequest.setMaxNumberOfMessages(numMessages);
 			List<Message> messages = sqsClient.receiveMessage(receiveMessageRequest).getMessages();
 			
-			baseStep.logBasic(messages.size() + " Message(s) retrieved from queue");
+			baseStep.logDebug(messages.size() + " Message(s) retrieved from queue");
 			
 			if (this.deleteMessage.equalsIgnoreCase("Y") && !isPreview) {				
 				
 				for (Message m : messages) {
 		            sqsClient.deleteMessage(queueURL, m.getReceiptHandle());
 		        } 				
-				baseStep.logBasic(messages.size() + " Message(s) deleted from queue");
+				baseStep.logDebug(messages.size() + " Message(s) deleted from queue");
 			}		
 			
 			return messages;
