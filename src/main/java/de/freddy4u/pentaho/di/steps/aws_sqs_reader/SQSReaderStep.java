@@ -250,11 +250,11 @@ public class SQSReaderStep extends BaseStep implements StepInterface {
 			return statusNode.textValue();
 			
 		} catch (JsonParseException e) {
-			logError(e.getMessage());
+			logError("Error parsing JSON: " + e.getMessage());
 			return "";
 			
 		} catch (IOException e) {
-			logError(e.getMessage());
+			logError("IO Error: "+ e.getMessage());
 			return "";
 			
 		}		
